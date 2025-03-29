@@ -2,6 +2,9 @@ const express = require('express')
 const { engine } = require('express-handlebars')
 const path = require('path')
 
+const fortune = require('./src/lib/fortune')
+const { title } = require('process')
+
 const app = express()
 const port = process.env.PORT || 3000
 
@@ -17,7 +20,9 @@ app.set('view engine', 'handlebars')
 app.set('views', path.join(__dirname, 'src', 'views'))
 
 app.get('/', (req, res) => res.render('home'))
-app.get('/about', (req, res) => res.render('about'))
+app.get('/about', (req, res) =>
+	res.render('about', { title: 'About', fortune: fortune.getFortune() })
+)
 
 app.get('*', (req, res) => {
 	res.status(404)
