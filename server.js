@@ -33,6 +33,7 @@ app.use((err, req, res, next) => {
 	res.render('500')
 })
 
+// add comment
 app.listen(port, () =>
 	console.log(`Сервер запущен на http://localhost:${port}`)
 )
