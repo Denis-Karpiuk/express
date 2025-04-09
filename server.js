@@ -14,12 +14,19 @@ app.engine(
 		extname: '.handlebars',
 	})
 )
-
+// изменения из mian
 app.set('view engine', 'handlebars')
 app.set('views', path.join(__dirname, 'src', 'views'))
 
 app.get('/', (req, res) => res.render('home'))
 app.get('/about', (req, res) =>
+	// изменения из mian
+
+	// изменения из mian
+
+	// изменения из mian
+
+	// изменения из mian
 	res.render('about', { title: 'About', fortune: fortune.getFortune() })
 )
 
