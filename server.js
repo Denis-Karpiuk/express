@@ -3,7 +3,6 @@ const { engine } = require('express-handlebars')
 const path = require('path')
 
 const fortune = require('./src/lib/fortune')
-const { title } = require('process')
 
 const app = express()
 const port = process.env.PORT || 3000
