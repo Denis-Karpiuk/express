@@ -10,10 +10,14 @@ This is a simple Express server created for learning purposes.
 
 ## Usage
 
+my specific changes
+
 -   Run `node server.js` to start the server
 -   Open your browser and navigate to `http://localhost:3000`
 
 ## Tests
+
+my specific changes
 
 -   There are two tests in the `test` folder
 -   Run `npm test` to run the tests
