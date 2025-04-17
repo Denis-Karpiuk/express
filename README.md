@@ -17,6 +17,7 @@ my specific changes
 
 ## Tests
 
+learn git revert
 my specific changes
 
 -   There are two tests in the `test` folder
